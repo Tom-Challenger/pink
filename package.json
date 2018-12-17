@@ -1,0 +1,35 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "-",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "author": "Ivanov Artem",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": false,
+    "parser": "html",
+    "proseWrap": "never",
+    "requirePragma": false,
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false,
+    "printWidth": 160
+  }
+}

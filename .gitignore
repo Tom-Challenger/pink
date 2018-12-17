@@ -1,0 +1,47 @@
+*
+!*/
+layout/
+design_specification/
+#Dependency directories for Node.js
+node_modules/
+
+!/.gitignore
+
+#Sublime-text ConfigurationFile's
+#/*.sublime-workspace
+#/*.sublime-project
+
+#EditorConfiguration
+#EditorConfig
+!/.editorconfig
+#AutomaticFormatting
+#Prettier
+#StyleCoding Control
+#
+
+#Pre-processors
+#LESS
+!*.less
+#SASS
+!*.sass
+!*.scss
+
+#FileRelationship for npm
+!/package.json
+!/package-lock.json
+#TaskRunner Grunt
+!/Gruntfile.js
+
+!*.html
+!*.css
+!*.js
+!*.md
+#Images
+!*.svg
+!*.png
+!*.jpg
+!*.jpeg
+#Fonts
+!*.woff
+!*.woff2
+!*.ttf
