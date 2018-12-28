@@ -4,6 +4,8 @@ layout/
 design_specification/
 #Dependency directories for Node.js
 node_modules/
+#Prodaction build
+Build/
 
 !/.gitignore
 
