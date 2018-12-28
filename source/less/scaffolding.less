@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Roboto';
+    src:
+         url('../fonts/roboto.woff') format('woff'),
+         url('../fonts/roboto.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+         url('../fonts/robotomedium.woff') format('woff'),
+         url('../fonts/robotomedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+         url('../fonts/robotobold.woff') format('woff'),
+         url('../fonts/robotobold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+  min-width: @width-screen--default;
+  margin: 0;
+  padding: 0;
+
+  /* raw */
+  font-size: 18px;
+  line-height: 27px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  color: #000000;
+  font-style: normal;
+
+  background-color: white;
+}
+
+/* Move to 'mixin.less' */
+/* ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+} */
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}

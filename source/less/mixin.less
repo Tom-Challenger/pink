@@ -1,0 +1,28 @@
+.container() {
+  width: @width-container--default;
+  margin-right: auto;
+  margin-left: auto;
+
+@media (min-width: @width-screen--mobile) {
+  width: @width-container--modile;
+}
+
+/* @media (min-width: @width-screen--tablet) {
+  width: @width-container--tablet;
+} */
+
+/* @media (min-width: @width-screen--desktop) {
+   width: @width-container--desktop;
+ } */
+}
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reset-link() {
+  text-decoration: none;
+}
