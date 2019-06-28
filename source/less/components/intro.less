@@ -1,18 +1,20 @@
 .intro {
   .container();
 
-  min-height: 461px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  min-height: 732px;
   background: @bg--dark url('../img/---iphone-hand-modile.jpg') no-repeat 50% 0;
   //background-size: 462px auto;
 
-  &__title {
-  }
-
-  &__wrapper {
-    padding-top: 462px;
-
-    @media (min-width: @width-screen--tablet) {
-
+  &__inner {
+    @media (min-width: @width-screen--mobile) {
+      margin-top: 460px;
     }
+/*     @media (min-width: @width-screen--table) {
+  margin-top: 460px;
+} */
   }
 }

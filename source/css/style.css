@@ -20,26 +20,47 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  /* raw */
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 27px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  color: #000000;
+  font-weight: 400;
   font-style: normal;
+  color: #000000;
   background-color: white;
 }
+/* Move to 'mixin.less' */
+/* p {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 .hidden {
   display: none;
 }
+
 .visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+} */
+.g-hidden {
+  display: none;
+}
+.g-visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -50,35 +71,40 @@ a {
   width: 320px;
   margin-right: auto;
   margin-left: auto;
-  /* @media (min-width: @screen_tablet) {
+  /* @media (min-width: @width-screen--tablet) {
   width: @width-container--tablet;
-}
-
-@media (min-width: @screen_desktop) {
-  width: @width-container--desktop;
 } */
-  background: rgba(0, 0, 0, 0.2);
+  /* @media (min-width: @width-screen--desktop) {
+   width: @width-container--desktop;
+ } */
 }
-.main-nav {
-  margin-bottom: -72px;
+@media (min-width: 320px) {
+  .page-header {
+    width: 320px;
+  }
 }
-.main-nav__wrapper {
+.page-header__inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #283645;
-  box-shadow: 0 1px 0 0 black;
 }
-.main-nav__logo {
+.page-header__inner--main-nav--close {
+  margin-bottom: -70px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.page-header__logo {
   display: block;
   width: 79px;
   height: 25px;
   font-size: 0;
   border: 1px solid blue;
 }
-.main-nav__toggle {
+.page-header__toggle {
   display: block;
   width: 25px;
   height: 25px;
@@ -87,18 +113,34 @@ a {
   border: 1px solid blue;
   cursor: pointer;
 }
-.site-list {
+.main-nav {
+  margin-bottom: -72px;
+}
+.main-nav--close {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+.main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.site-list__item {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+.main-nav__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: stretch;
 }
-.site-list__link {
+.main-nav__link {
+  text-decoration: none;
   display: block;
+  flex-grow: 1;
   padding: 20px;
   color: #ffffff;
   font-size: 18px;
@@ -112,19 +154,68 @@ a {
   width: 320px;
   margin-right: auto;
   margin-left: auto;
-  /* @media (min-width: @screen_tablet) {
+  /* @media (min-width: @width-screen--tablet) {
   width: @width-container--tablet;
-}
-
-@media (min-width: @screen_desktop) {
-  width: @width-container--desktop;
 } */
-  min-height: 461px;
+  /* @media (min-width: @width-screen--desktop) {
+   width: @width-container--desktop;
+ } */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 732px;
   background: #1d2631 url('../img/---iphone-hand-modile.jpg') no-repeat 50% 0;
 }
-.intro__wrapper {
-  padding-top: 462px;
+@media (min-width: 320px) {
+  .intro {
+    width: 320px;
+  }
+}
+.intro__inner {
+  /*     @media (min-width: @width-screen--table) {
+  margin-top: 460px;
+} */
+}
+@media (min-width: 320px) {
+  .intro__inner {
+    margin-top: 460px;
+  }
 }
 .download-app {
-  background: #ffffff;
+  padding: 30px 20px;
+  background: #1d2631;
+}
+.download-app__button {
+  text-decoration: none;
+  display: block;
+  padding: 15px 35px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+}
+.download-app__platforms {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 25px;
+}
+.download-app__platform {
+  height: 55px;
+  width: 55px;
+  background-color: grey;
+}
+.download-app__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400px;
+  color: #ffffff;
+  text-align: center;
 }
