@@ -30,18 +30,22 @@ body {
   margin: 0;
   padding: 0;
 
-  /* raw */
-  font-size: 18px;
-  line-height: 27px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  color: #000000;
-  font-style: normal;
+  font-family: @font-family--default;
+  font-size: @font-size--default;
+  line-height: @line-height--default;
+  font-weight: @font-weight--default;
+  font-style: @font-style--default;
+  color: @color--default;
 
   background-color: white;
 }
 
 /* Move to 'mixin.less' */
-/* ul {
+/* p {
+  margin: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
 
@@ -50,7 +54,7 @@ body {
 
 a {
   text-decoration: none;
-} */
+}
 
 .hidden {
   display: none;
@@ -64,4 +68,12 @@ a {
   margin: -1px;
 
   clip: rect(0 0 0 0);
+} */
+
+.g-hidden {
+  .hidden();
+}
+
+.g-visually-hidden {
+  .visually-hidden();
 }

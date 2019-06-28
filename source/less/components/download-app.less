@@ -1,16 +1,46 @@
 .download-app {
-  background: @bg--white;
+  padding: 30px 20px;
+
+  background: @bg--dark;
 
   &__button {
+    .reset-link();
+    display: block;
 
+    padding: 15px 35px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+
+    border: 3px solid #ffffff;
+    border-radius: 25px;
   }
 
   &__platforms {
+    .reset-list();
 
-
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 25px;
   }
 
   &__platform {
+    height: 55px;
+    width: 55px;
+    background-color: grey;
+  }
 
+  &__description {
+    .reset-paragraph();
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400px;
+    color: #ffffff;
+
+    text-align: center;
   }
 }
