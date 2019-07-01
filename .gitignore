@@ -36,7 +36,8 @@ Build/
 
 !*.html
 #use LESS
-#!*.css
+*.css
+!*/normolize.css
 !*.js
 !*.md
 #Images

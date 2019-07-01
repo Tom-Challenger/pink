@@ -74,10 +74,10 @@
 
       <section class="reviews">
         <h2 class="g-visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__wrapper slider">
+        <div class="reviews__inner slider">
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+            <blockquote class="reviews__item slider__item slider__item--current">
+              <cite class="reviews__author--name">Николай Петров</cite>
               <p class="reviews__text">
                 &laquoЭто приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
                 комментариях к выложенной фотографии!&raquo
@@ -85,29 +85,29 @@
             </blockquote>
           </div>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--current" type="button"><span class="g-visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="g-visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="g-visually-hidden">3</span></button>
           </div>
         </div>
       </section>
 
       <section class="price">
-        <table class="price__table">
+        <table class="price__table price__table--current--col-2">
           <thead class="price__thead">
             <tr>
-              <td class="price__value">
-                <p class="price__rang"><b>База</b></p>
-                <p class="price__cost">1,99 USD</p>
-              </td>
-              <td class="price__value price__value--hit">
-                <p class="price__rang"><b>Стандарт</b></p>
-                <p class="price__cost">3,99 USD</p>
-              </td>
-              <td class="price__value">
-                <p class="price__rang"><b>Анлим</b></p>
-                <p class="price__cost">9,99 USD</p>
-              </td>
+              <th class="price__value">
+                <b class="price__rang">База</b>
+                <span class="price__cost">1,99 USD</span>
+              </th>
+              <th class="price__value price__value--hit">
+                <b class="price__rang">Стандарт</b>
+                <span class="price__cost">3,99 USD</span>
+              </th>
+              <th class="price__value">
+                <b class="price__rang">Анлим</b>
+                <span class="price__cost">9,99 USD</span>
+              </th>
             </tr>
           </thead>
           <tbody class="price__tbody">
@@ -130,9 +130,9 @@
         </table>
 
         <div class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle" type="button"><span class="g-visually-hidden">1</span></button>
+          <button class="slider__toggle slider__toggle--current" type="button"><span class="g-visually-hidden">2</span></button>
+          <button class="slider__toggle" type="button"><span class="g-visually-hidden">3</span></button>
         </div>
       </section>
     </main>
@@ -141,7 +141,7 @@
       <section class="contacts">
         <div class="contacts__business-card">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <ul>
+          <ul class="contacts__list">
             <li class="contact">
                <b class="contact__caption">Звоните:</b>
                 <p class="contact__data contact__data--tel">+7&nbsp;(812)&nbsp;555-66-66</p>

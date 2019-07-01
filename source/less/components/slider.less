@@ -1,0 +1,56 @@
+/* Start slider style */
+.slider {
+
+}
+
+.slider__list {
+  position: relative;
+}
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  &--current {
+    position: static;
+    opacity: 1;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.slider__toggle {
+  display: block;
+  padding: 0;
+  margin: 0 5px;
+  height: 6px;
+  width: 6px;
+  box-sizing: content-box;
+  background-color: fade(@slider--bg-item, 30%);
+
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:not(&--current):hover {
+    background-color: fade(@slider--bg-item, 60%);
+  }
+
+  &:not(&--current):active {
+    background-color: fade(@slider--bg-item, 10%);
+  }
+}
+
+.slider__toggle--current {
+  background-color: #ffffff;
+  border: 3px solid @slider--bg-item;
+}

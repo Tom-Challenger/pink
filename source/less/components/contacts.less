@@ -1,0 +1,73 @@
+.contacts {
+  .container();
+
+  background-color: transparent;
+
+  &__business-card {
+    padding: 40px 20px 70px;
+    background: transparent url('../img/bg-triangle-down.svg') bottom center no-repeat;
+    background-size: cover;
+
+    &:after {
+
+    }
+  }
+
+  &__title {
+    .reset-title();
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+    color: @color--dark;
+  }
+
+  &__list {
+    .reset-list();
+  }
+
+  &__map {
+    min-height: 100px;
+    background-color: @bg--grey;
+  }
+}
+
+.contact {
+  margin-bottom: 25px;
+
+  text-align: center;
+  color: @color--dark;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__caption {
+    .reset-text();
+
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 600;
+  }
+
+  &__data {
+    .reset-paragraph();
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 400;
+    color: @color--red;
+
+    &--tel {
+
+    }
+
+    &--email {
+
+    }
+
+    &--address {
+
+    }
+  }
+}

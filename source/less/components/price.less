@@ -1,0 +1,129 @@
+.price {
+  // .container();
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: normal;
+
+  padding: 70px 20px 40px;
+
+  background: #ffffff url('../img/bg-triangle.svg') right top no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+
+  &__table {
+    margin-bottom: 40px;
+    border-collapse: separate;
+    border-spacing: 2px;
+    transition: transform 0.5s ease;
+
+    &--current--col-1 {
+      transform: translateX(0px);
+    }
+
+    &--current--col-2 {
+      transform: translateX(-278px);
+    }
+
+    &--current--col-3 {
+      transform: translateX(-530px);
+    }
+  }
+
+  &__thead {
+
+  }
+
+  &__value {
+    position: relative;
+    min-width: 276px;
+    padding: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background-color: @color--dark;
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    &--hit {
+
+      &:before {
+        content: 'Хит';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: @bg--red;
+        transform: rotate(-45deg) translate(-15px, -10px);
+        transform-origin: center bottom;
+      }
+    }
+  }
+
+  &__rang {
+    .reset-text();
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__cost {
+    .reset-text();
+    display: block;
+    font-size: 24px;
+  }
+
+  &__tbody {
+
+  }
+
+  &__field {
+    position: relative;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    // align-items: center;
+
+    padding: 20px;
+    padding-right: 55px;
+
+    font-size: 14px;
+    line-height: 30px;
+    color: @color--dark;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 20px;
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      background: transparent url('') center center no-repeat;
+      background-size: contain;
+      //debug
+      background-color: grey;
+    }
+
+    &--yes {
+      background-image: url('../img/yes-mark.svg');
+    }
+    &--no {
+      background-image: url('../img/no-mark.svg');
+    }
+  }
+
+  &__toggles {
+
+  }
+}
